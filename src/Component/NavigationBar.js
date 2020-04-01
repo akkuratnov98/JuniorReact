@@ -24,7 +24,7 @@ function SearchInput() {
         let tab = document.getElementById("tab").rows;
         for (let j = tab.length ; j > 1; j--){
             for (let i = 1; i < j; i++){
-                if (/(test)/g.test(tab[i].textContent))
+                if (/(test)/g.test(tab[i].textContent) && !(/(test)/g.test(tab[i-1].textContent)))
                 {
                     let temp1 = tab[i].textContent;
                     tab[i].textContent = tab[i - 1].textContent;
