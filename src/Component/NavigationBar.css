@@ -1,0 +1,40 @@
+.NavigationBar {
+    height: 60px;
+    background-color: #7ca1c8;
+}
+
+.NavigationBar-SearchInput{
+    margin: 15px;
+    background-color: #5e73ba;
+    border: none;
+    color: black;
+    padding: 2px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.NavigationBar-buttonAdd{
+    //margin: px;
+    background-color: #5384d7;
+    border: none;
+    color: black;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.NavigationBar-text{
+    margin-left: 100px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
