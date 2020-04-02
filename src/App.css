@@ -1,5 +1,11 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+ /*text-align: center;*/
+
   background-color: #4802fb;
 }
 
@@ -17,8 +23,10 @@
 }
 
 .App-body {
-  text-align: center;
-  background-color: #282c34;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  background-color: #4802fb;
 }
 
 

@@ -1,12 +1,15 @@
 import React from 'react';
 import './NavigationBar.css';
+import { Button } from "@blueprintjs/core";
+import '@blueprintjs/core/lib/css/blueprint.css'
 
 function NavigationBar() {
     return (
         <div className="NavigationBar">
+           {/*<Button onClick={SearchInput} type="Button" className="bp3-button bp3-outlined" >Button</Button>*/}
             <input onClick={SearchInput} className="NavigationBar-SearchInput" name="SearchInput" type="button" value="SearchInput" />
             <input onClick={AddRow} className="NavigationBar-buttonAdd" id="buttonAdd" name="buttonAdd" type="button" value="+" />
-            <input className="NavigationBar-text" id="text" name="text" type="test" size="100" required placeholder="Вводите текст"/>
+            <input className="NavigationBar-text" id="text" name="text" type="test" required placeholder="Вводите текст"/>
         </div>
     );
 }

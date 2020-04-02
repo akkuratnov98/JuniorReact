@@ -1,5 +1,6 @@
 .NavigationBar {
-    height: 60px;
+    /*height: 60px;*/
+    height: 100%;
     background-color: #7ca1c8;
 }
 
@@ -16,7 +17,7 @@
 }
 
 .NavigationBar-buttonAdd{
-    //margin: px;
+    margin: 15px;
     background-color: #5384d7;
     border: none;
     color: black;
@@ -28,11 +29,11 @@
 }
 
 .NavigationBar-text{
-    margin-left: 100px;
+    margin: 15px 0px 15px 100px;
     background-color: white;
     border: none;
     color: black;
-    padding: 2px 5px;
+    /*padding: 2px 5px;*/
     text-align: center;
     text-decoration: none;
     display: inline-block;

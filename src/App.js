@@ -6,12 +6,10 @@ import Table from "./Component/Table";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          <NavigationBar />
-      </header>
-      <body>
-        <Table/>
-      </body>
+        <NavigationBar />
+        <div className="App-body">
+            <Table  />
+        </div>
     </div>
   );
 }
