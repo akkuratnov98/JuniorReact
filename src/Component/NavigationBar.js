@@ -2,6 +2,7 @@ import React from 'react';
 import './NavigationBar.css';
 import { Button } from "@blueprintjs/core";
 import '@blueprintjs/core/lib/css/blueprint.css'
+const randomstring = require("randomstring");
 
 function NavigationBar() {
     return (
@@ -17,7 +18,10 @@ function AddRow() {
     let tbody = document.getElementById("tab").getElementsByTagName("TBODY")[0];
     let row = document.createElement("TR");
     let td1 = document.createElement("TD");
-    td1.appendChild(document.createTextNode(document.getElementById("text").value));
+    td1.appendChild(document.createTextNode(randomstring.generate({
+        length: 20,
+        charset: 'alphabetic'
+    })));
     row.appendChild(td1);
     tbody.appendChild(row);
     document.getElementById("text").value = "";
@@ -27,7 +31,9 @@ function SearchInput() {
         let tab = document.getElementById("tab").rows;
         for (let j = tab.length ; j > 1; j--){
             for (let i = 1; i < j; i++){
-                if (/(test)/g.test(tab[i].textContent) && !(/(test)/g.test(tab[i-1].textContent)))
+
+                if (tab[i].textContent.indexOf(document.getElementById('text').value) !== -1 &&
+                    !(tab[i-1].textContent.indexOf(document.getElementById('text').value) !== -1))
                 {
                     let temp1 = tab[i].textContent;
                     tab[i].textContent = tab[i - 1].textContent;
@@ -35,6 +41,7 @@ function SearchInput() {
                 }
             }
         }
+
 }
 
 export default NavigationBar;
